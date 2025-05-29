@@ -6,7 +6,8 @@ def lutar(jogador, oponente):
 
     while jogador.vida > 0 and oponente.vida > 0:
         dano = jogador.atacar()
-        oponente.vida -= dano
+        defesa = oponente.defender()
+        oponente.vida -= dano - defesa
         print(f"{jogador.nome} ataca e causa {dano} de dano! Vida do {oponente.nome}: {oponente.vida}")
         time.sleep(1)
 
@@ -14,11 +15,13 @@ def lutar(jogador, oponente):
             break
 
         dano = oponente.atacar()
-        jogador.vida -= dano
+        defesa = jogador.defender()
+        jogador.vida -= dano - defesa
         print(f"{oponente.nome} ataca e causa {dano} de dano! Vida do {jogador.nome}: {jogador.vida}")
         time.sleep(1)
 
     vencedor = jogador if jogador.vida > 0 else oponente
-    print(f"\n🔥 {vencedor.nome} venceu a luta! 🔥")
+    print(f"\n🔥 {vencedor.nome} WIN 🔥")
+    
 
 
