@@ -22,4 +22,3 @@ def lutar(jogador, oponente):
     print(f"\n🔥 {vencedor.nome} venceu a luta! 🔥")
 
 
-def 
