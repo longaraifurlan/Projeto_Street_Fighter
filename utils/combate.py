@@ -20,3 +20,6 @@ def lutar(jogador, oponente):
 
     vencedor = jogador if jogador.vida > 0 else oponente
     print(f"\n🔥 {vencedor.nome} venceu a luta! 🔥")
+
+
+def 

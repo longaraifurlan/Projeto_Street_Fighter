@@ -3,20 +3,29 @@ class Ryu:
         self.nome = "Ryu"
         self.vida = 100
         self.forca = 15
+        self.defesa = 7
         pass
 
     def atacar(self):
         return self.forca
+    def defender(self):
+        return self.defesa
+
 
 class Ken:
     def __init__(self):
         self.nome = "Ken"
         self.vida = 100
         self.forca = 14
+        self.defesa = 7
         pass
 
     def atacar(self):
         return self.forca
+    def defender(self):
+        return self.defesa
+        pass
+
     
 class Guile:
     def __init__(self):
