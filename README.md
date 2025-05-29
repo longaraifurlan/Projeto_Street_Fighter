@@ -17,7 +17,7 @@ Cada personagem está representado com um GIF animado e suas estatísticas bási
 | **Guile** | ![Guile](visual/guile.gif) | 100 | 9 | 7 |
 | **Zangief** | ![Zangief](visual/zangief.gif) | 100 | 8 | 8 |
 | **Dhalsim** | ![Dhalsim](visual/dhalsim.gif) | 100 | 8 | 7 |
-| **M. Bison** | ![Bison](visual/bison.gif) | 105 | 12 | 9 |
+| **M. Bison** | ![Bison](visual/mbison.gif) | 105 | 12 | 9 |
 
 ---
 
