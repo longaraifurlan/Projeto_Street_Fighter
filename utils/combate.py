@@ -8,8 +8,8 @@ def lutar(jogador, oponente):
         dano = jogador.atacar()
         defesa = oponente.defender()
         oponente.vida -= dano - defesa
-        print(f"{jogador.nome} ataca e causa {dano} de dano! Vida do {oponente.nome}: {oponente.vida}")
-        time.sleep(1)
+        print(f"\033[32m{jogador.nome} ataca e causa {dano} de dano! Vida do {oponente.nome}: {oponente.vida} / {dano-defesa}\033[m")
+        time.sleep(0.5)
 
         if oponente.vida <= 0:
             break
@@ -17,8 +17,8 @@ def lutar(jogador, oponente):
         dano = oponente.atacar()
         defesa = jogador.defender()
         jogador.vida -= dano - defesa
-        print(f"{oponente.nome} ataca e causa {dano} de dano! Vida do {jogador.nome}: {jogador.vida}")
-        time.sleep(1)
+        print(f"\033[31m{oponente.nome} ataca e causa {dano} de dano! Vida do {jogador.nome}: {jogador.vida} / {dano-defesa}\033[m")
+        time.sleep(0.5)
 
     vencedor = jogador if jogador.vida > 0 else oponente
     print(f"\n🔥 {vencedor.nome} WIN 🔥")

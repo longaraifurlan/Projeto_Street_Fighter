@@ -33,17 +33,17 @@ class Ken(Personagem):
 
 class Guile(Personagem):
     def __init__(self):
-        super().__init__("Guile", 100, 9, 7)
+        super().__init__("Guile", 100, 9, 9)
     def defender(self):
-        variacao = random.randint(1, 2)
+        variacao = random.randint(1, 4)
         return max(self.defesa + variacao, 0)
 #---------------------------------------------------
 
 class ChunLi(Personagem):
     def __init__(self):
-        super().__init__("Chun-Li", 100, 9, 7)
+        super().__init__("Chun-Li", 100, 9, 8)
     def defender(self):
-        variacao = random.randint(2, 3)
+        variacao = random.randint(3, 5)
         return max(self.defesa + variacao, 0)
 #--------------------------------------------------
 
@@ -57,16 +57,16 @@ class EHonda(Personagem):
 
 class Blanka(Personagem):
     def __init__(self):
-        super().__init__("Blanka", 100, 9, 8)
+        super().__init__("Blanka", 100, 9, 10)
 
     def defender(self):
-        print(f"{self.nome} solta uma descarga elétrica ao defender!")
+        print(f"{self.nome} solta uma descarga elétrica ao defender!⚡")
         return self.defesa + 1
 
 
 class Dhalsim(Personagem):
     def __init__(self):
-        super().__init__("Dhalsim", 100, 8, 7)
+        super().__init__("Dhalsim", 100, 8, 9)
     def defender(self):
         variacao = random.randint(2, 3)
         return max(self.defesa + variacao, 0)
@@ -74,15 +74,15 @@ class Dhalsim(Personagem):
 
 class MBison(Personagem):
     def __init__(self):
-        super().__init__("M.Bison", 105, 12, 9)
+        super().__init__("M.Bison ", 105, 12, 9)
     def defender(self):
-        variacao = random.randint(2, 3)
+        variacao = random.randint(-4, 6)
         return max(self.defesa + variacao, 0)
 
 
 class Zangief(Personagem):
     def __init__(self):
-        super().__init__("Zangief", 100, 8, 8)
+        super().__init__("Zangief", 100, 8, 9)
     def defender(self):
-        variacao = random.randint(2, 3)
+        variacao = random.randint(3, 4)
         return max(self.defesa + variacao, 0)
